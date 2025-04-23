@@ -1,0 +1,24 @@
+<suite name="My suite" parallel="tests" thread-count="2">
+
+<!--        <listeners>-->
+<!--            <listener class-name="utilities.ExtentReportUtils"/>-->
+<!--        </listeners>-->
+    <test name="First test" >
+        <parameter name="browsers" value="chrome"/>
+
+
+        <classes>
+            <class name="ui.tests.BankAccountTest"/>
+
+        </classes>
+   </test>
+    <test name="Second test">
+        <parameter name="browsers" value="chrome"/>
+
+
+        <classes>
+            <class name="ui.tests.BankAccountTest"/>
+
+        </classes>
+    </test>
+</suite>
